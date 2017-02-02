@@ -103,7 +103,7 @@ def parse_values(values, outfile):
         # Make sure to remove the semicolon and the close paren
         if latest_row[-1][-2:] == ");":
             latest_row[-1] = latest_row[-1][:-2]
-            writer.writerow(latest_row)
+        writer.writerow(latest_row)
 
 
 def main():
